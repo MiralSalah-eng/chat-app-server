@@ -15,9 +15,9 @@ const io = require('socket.io')(http, {
     }
 });
 
-app.use(cors({
+/*app.use(cors({
     origin : [ "http://localhost:3000" , "https://chat-app-n6f5.onrender.com/" ]
-}))
+}))*/
 app.use(route)
 
 io.on('connection' , socket => {
